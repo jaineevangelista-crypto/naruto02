@@ -1,93 +1,231 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
 }
 
-body {
-    background-color: #1a1a1a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+body{
+    background:#0f172a;
+    color:#fff;
+    overflow-x:hidden;
 }
 
-.card {
-    background: #ffffff;
-    width: 350px;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(255, 102, 0, 0.3);
-    border-top: 6px solid #ff6600;
-    text-align: center;
+/* ===========================
+   NAVBAR
+=========================== */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    backdrop-filter:blur(15px);
+    background:rgba(0,0,0,.3);
 }
 
-.card-header {
-    padding: 20px;
-    background-color: #f9f9f9;
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px;
 }
 
-.card-header img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 4px solid #ff6600;
-    object-fit: cover;
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#ff8c00;
 }
 
-.card-header h1 {
-    font-size: 24px;
-    color: #333;
-    margin-top: 10px;
+.menu{
+    display:flex;
+    list-style:none;
+    gap:30px;
 }
 
-.titulo {
-    color: #ff6600;
-    font-weight: bold;
-    font-size: 14px;
+.menu a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
 }
 
-.card-body {
-    padding: 20px;
+.menu a:hover{
+    color:#ff8c00;
 }
 
-.card-body h3 {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 8px;
+.menu-btn{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
 }
 
-.card-body p {
-    font-size: 14px;
-    color: #666;
-    line-height: 1.5;
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    max-width:1200px;
+    margin:auto;
+    padding:100px 20px;
 }
 
-button {
-    margin-top: 15px;
-    background-color: #ff6600;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s;
+.hero-text{
+    width:50%;
 }
 
-button:hover {
-    background-color: #e65c00;
+.hero-text h1{
+    font-size:60px;
+    margin-bottom:20px;
 }
 
-#info-extra {
-    margin-top: 15px;
-    padding: 10px;
-    background-color: #fff3eb;
-    border-radius: 6px;
-    border: 1px solid #ffccaa;
+.hero-text p{
+    font-size:20px;
+    line-height:35px;
+    color:#ddd;
 }
 
-.hidden {
-    display: none;
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#ff8c00;
+    color:white;
+    text-decoration:none;
+    padding:15px 40px;
+    border-radius:40px;
+    transition:.4s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 20px orange;
+}
+
+/* ===========================
+   HERO IMAGE
+=========================== */
+
+.hero-image{
+    width:40%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.circle{
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    background:linear-gradient(45deg,#ff8c00,#ff3c00);
+    animation:rotate 10s linear infinite;
+    box-shadow:0 0 50px orange;
+}
+
+@keyframes rotate{
+
+0%{
+transform:rotate(0);
+}
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+
+/* ===========================
+   HEROES
+=========================== */
+
+.heroes{
+    padding:100px 20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.heroes h2{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#1e293b;
+    border-radius:15px;
+    padding:30px;
+    transition:.4s;
+    border:1px solid rgba(255,255,255,.05);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(255,140,0,.5);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#ff8c00;
+}
+
+.card p{
+    color:#ccc;
+    line-height:28px;
+}
+
+/* ===========================
+   SKILLS
+=========================== */
+
+.skills{
+    padding:100px 20px;
+    background:#111827;
+}
+
+.skills h2{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:40px;
+}
+
+.skill-grid{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+}
+
+.skill{
+    background:#1f2937;
+    border-radius:15px;
+    padding:40px;
+    text-align:center;
+    font-size:45px;
+    transition:.4s;
+}
+
+.skill:hover{
+    transform:scale(1.08);
+    background:#ff8c00;
+}
+
+.skill h3{
+    margin-top:20px;
+    font-size:22px;
 }

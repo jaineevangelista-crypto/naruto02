@@ -1,14 +1,185 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const btnInfo = document.getElementById('btn-info');
-    const infoExtra = document.getElementById('info-extra');
+// ===============================
+// MENU RESPONSIVO
+// ===============================
 
-    btnInfo.addEventListener('click', () => {
-        if (infoExtra.classList.contains('hidden')) {
-            infoExtra.classList.remove('hidden');
-            btnInfo.textContent = 'Ocultar Jutsu';
-        } else {
-            infoExtra.classList.add('hidden');
-            btnInfo.textContent = 'Ver Jutsu Principal';
-        }
+const menuBtn = document.querySelector(".menu-btn");
+const menu = document.querySelector(".menu");
+
+menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
+
+// Fecha o menu ao clicar em um link
+
+document.querySelectorAll(".menu a").forEach(link => {
+    link.addEventListener("click", () => {
+        menu.classList.remove("active");
     });
 });
+
+// ===============================
+// MODO ESCURO / CLARO
+// ===============================
+
+const themeButton = document.getElementById("theme");
+
+themeButton.addEventListener("click", () => {
+
+    document.body.classList.toggle("light");
+
+    if(document.body.classList.contains("light")){
+        themeButton.innerHTML = "☀️";
+    }else{
+        themeButton.innerHTML = "🌙";
+    }
+
+});
+
+// ===============================
+// ANIMAÇÃO AO ROLAR
+// ===============================
+
+const cards = document.querySelectorAll(".card");
+const skills = document.querySelectorAll(".skill");
+const villages = document.querySelectorAll(".village");
+
+function reveal(){
+
+    const trigger = window.innerHeight * 0.85;
+
+    [...cards,...skills,...villages].forEach(item=>{
+
+        const top = item.getBoundingClientRect().top;
+
+        if(top < trigger){
+            item.classList.add("show");
+        }
+
+    });
+
+}
+
+window.addEventListener("scroll", reveal);
+
+reveal();
+
+// ===============================
+// BOTÃO VOLTAR AO TOPO
+// ===============================
+
+const topButton = document.createElement("button");
+
+topButton.innerHTML="⬆";
+
+topButton.id="topButton";
+
+document.body.appendChild(topButton);
+
+window.addEventListener("scroll",()=>{
+
+    if(window.scrollY>400){
+        topButton.classList.add("visible");
+    }else{
+        topButton.classList.remove("visible");
+    }
+
+});
+
+topButton.addEventListener("click",()=>{
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+
+});
+
+// ===============================
+// EFEITO DE DIGITAÇÃO
+// ===============================
+
+const title = document.querySelector(".hero h1");
+
+const original = title.textContent;
+
+title.textContent="";
+
+let i=0;
+
+function typing(){
+
+    if(i<original.length){
+
+        title.textContent+=original.charAt(i);
+
+        i++;
+
+        setTimeout(typing,60);
+
+    }
+
+}
+
+typing();
+
+// ===============================
+// CONTADOR DAS TÉCNICAS
+// ===============================
+
+document.querySelectorAll(".skill").forEach((skill,index)=>{
+
+    skill.addEventListener("mouseenter",()=>{
+
+        skill.style.transform="scale(1.15) rotate(3deg)";
+
+    });
+
+    skill.addEventListener("mouseleave",()=>{
+
+        skill.style.transform="";
+
+    });
+
+});
+
+// ===============================
+// FORMULÁRIO
+// ===============================
+
+const form = document.querySelector("form");
+
+form.addEventListener("submit",(e)=>{
+
+    e.preventDefault();
+
+    alert("Mensagem enviada com sucesso!");
+
+    form.reset();
+
+});
+
+// ===============================
+// ANIMAÇÃO DE FUNDO
+// ===============================
+
+setInterval(()=>{
+
+    const circle=document.querySelector(".circle");
+
+    circle.style.boxShadow=`0 0 ${
+        Math.random()*60+20
+    }px orange`;
+
+},700);
+
+// ===============================
+// PRELOAD
+// ===============================
+
+window.addEventListener("load",()=>{
+
+    document.body.classList.add("loaded");
+
+});
+
+console.log("Ninja Legends carregado com sucesso!");

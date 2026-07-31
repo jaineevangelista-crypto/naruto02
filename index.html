@@ -3,33 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Naruto Uzumaki</title>
+    <title>Ninja Legends</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/7a4b62b0a4.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <div class="card">
-        <div class="card-header">
-            <img src="https://via.placeholder.com/150" alt="Naruto Uzumaki" id="avatar">
-            <h1>Naruto Uzumaki</h1>
-            <p class="titulo">7º Hokage de Konoha</p>
-        </div>
+<header>
 
-        <div class="card-body">
-            <h3>Sobre o Ninja</h3>
-            <p>
-                Naruto Uzumaki é um shinobi da Vila Oculta da Folha e a reencarnação de Asura Otsutsuki. 
-                Ele se tornou o Jinchuriki da Kurama no dia em que nasceu e superou a rejeição da vila para realizar seu sonho de se tornar Hokage.
-            </p>
+<nav class="navbar">
 
-            <button id="btn-info">Ver Jutsu Principal</button>
-            <div id="info-extra" class="hidden">
-                <p><strong>Jutsu Assinatura:</strong> Rasengan / Rasenshuriken</p>
-                <p><strong>Transformação:</strong> Modo Sábio & Modo Kurama</p>
-            </div>
-        </div>
-    </div>
+<div class="logo">
+🥷 Ninja Legends
+</div>
 
-    <script src="script.js"></script>
+<ul class="menu">
+
+<li><a href="#home">Início</a></li>
+<li><a href="#heroes">Ninjas</a></li>
+<li><a href="#skills">Técnicas</a></li>
+<li><a href="#villages">Vilas</a></li>
+<li><a href="#contact">Contato</a></li>
+
+</ul>
+
+<div class="menu-btn">
+<i class="fas fa-bars"></i>
+</div>
+
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h1>Bem-vindo ao mundo dos Ninjas</h1>
+
+<p>
+
+Treine, descubra técnicas secretas e conheça grandes guerreiros
+em uma página inspirada no universo ninja.
+
+</p>
+
+<a href="#heroes" class="btn">
+Explorar
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<div class="circle"></div>
+
+</div>
+
+</section>
+
+<section class="heroes" id="heroes">
+
+<h2>Grandes Ninjas</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Jovem Herói</h3>
+
+<p>
+Determinado e cheio de energia.
+Nunca desiste dos seus objetivos.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Espadachim</h3>
+
+<p>
+Silencioso, estratégico e extremamente forte.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Mestra Médica</h3>
+
+<p>
+Especialista em cura e força sobre-humana.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Mestre Ninja</h3>
+
+<p>
+Experiente, inteligente e líder nato.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="skills" id="skills">
+
+<h2>Técnicas Ninja</h2>
+
+<div class="skill-grid">
+
+<div class="skill">
+🔥
+<h3>Fogo</h3>
+</div>
+
+<div class="skill">
+💧
+<h3>Água</h3>
+</div>
+
+<div class="skill">
+🌪
+<h3>Vento</h3>
+</div>
+
+<div class="skill">
+⚡
+<h3>Raio</h3>
+</div>
+
+<div class="skill">
+🌱
+<h3>Terra</h3>
+</div>
+
+<div class="skill">
+🌀
+<h3>Energia</h3>
+</div>
+
+</div>
+
+</section>
+
+<section class="villages" id="villages">
+
+<h2>Vilas</h2>
+
+<div class="village-container">
+
+<div class="village">
+🍃
+<h3>Folha</h3>
+</div>
+
+<div class="village">
+🌫
+<h3>Névoa</h3>
+</div>
+
+<div class="village">
+⚡
+<h3>Nuvem</h3>
+</div>
+
+<div class="village">
+🏜
+<h3>Areia</h3>
+</div>
+
+<div class="village">
+🪨
+<h3>Pedra</h3>
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Entre em contato</h2>
+
+<form>
+
+<input type="text" placeholder="Nome">
+
+<input type="email" placeholder="Email">
+
+<textarea placeholder="Mensagem"></textarea>
+
+<button>
+Enviar
+</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Ninja Legends
+
+</p>
+
+<button id="theme">
+🌙
+</button>
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
