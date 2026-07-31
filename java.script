@@ -1,0 +1,14 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const btnInfo = document.getElementById('btn-info');
+    const infoExtra = document.getElementById('info-extra');
+
+    btnInfo.addEventListener('click', () => {
+        if (infoExtra.classList.contains('hidden')) {
+            infoExtra.classList.remove('hidden');
+            btnInfo.textContent = 'Ocultar Jutsu';
+        } else {
+            infoExtra.classList.add('hidden');
+            btnInfo.textContent = 'Ver Jutsu Principal';
+        }
+    });
+});
