@@ -1,231 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ninja Legends</title>
+
+    <title>Naruto Project</title>
 
     <link rel="stylesheet" href="style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <script src="https://kit.fontawesome.com/7a4b62b0a4.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
 <header>
 
-<nav class="navbar">
+    <div class="logo">
+        🍥 Naruto Project
+    </div>
 
-<div class="logo">
-🥷 Ninja Legends
-</div>
+    <nav>
 
-<ul class="menu">
+        <a href="#">Início</a>
+        <a href="#">Personagens</a>
+        <a href="#">Vilas</a>
+        <a href="#">Akatsuki</a>
 
-<li><a href="#home">Início</a></li>
-<li><a href="#heroes">Ninjas</a></li>
-<li><a href="#skills">Técnicas</a></li>
-<li><a href="#villages">Vilas</a></li>
-<li><a href="#contact">Contato</a></li>
-
-</ul>
-
-<div class="menu-btn">
-<i class="fas fa-bars"></i>
-</div>
-
-</nav>
+    </nav>
 
 </header>
 
-<section class="hero" id="home">
+<section class="hero">
 
-<div class="hero-text">
+    <h1>Universo Naruto</h1>
 
-<h1>Bem-vindo ao mundo dos Ninjas</h1>
-
-<p>
-
-Treine, descubra técnicas secretas e conheça grandes guerreiros
-em uma página inspirada no universo ninja.
-
-</p>
-
-<a href="#heroes" class="btn">
-Explorar
-</a>
-
-</div>
-
-<div class="hero-image">
-
-<div class="circle"></div>
-
-</div>
+    <p>
+        Explore personagens, vilas e habilidades do mundo ninja.
+    </p>
 
 </section>
 
-<section class="heroes" id="heroes">
+<section class="search-area">
 
-<h2>Grandes Ninjas</h2>
+    <input
+        type="text"
+        id="search"
+        placeholder="Pesquisar personagem..."
+    >
 
-<div class="cards">
+    <select id="vila">
 
-<div class="card">
+        <option value="Todos">Todas as Vilas</option>
 
-<h3>Jovem Herói</h3>
+        <option value="Folha">
+            Vila da Folha
+        </option>
 
-<p>
-Determinado e cheio de energia.
-Nunca desiste dos seus objetivos.
-</p>
+        <option value="Areia">
+            Vila da Areia
+        </option>
 
-</div>
+        <option value="Névoa">
+            Vila da Névoa
+        </option>
 
-<div class="card">
+        <option value="Nuvem">
+            Vila da Nuvem
+        </option>
 
-<h3>Espadachim</h3>
+        <option value="Pedra">
+            Vila da Pedra
+        </option>
 
-<p>
-Silencioso, estratégico e extremamente forte.
-</p>
+        <option value="Akatsuki">
+            Akatsuki
+        </option>
 
-</div>
-
-<div class="card">
-
-<h3>Mestra Médica</h3>
-
-<p>
-Especialista em cura e força sobre-humana.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Mestre Ninja</h3>
-
-<p>
-Experiente, inteligente e líder nato.
-</p>
-
-</div>
-
-</div>
+    </select>
 
 </section>
 
-<section class="skills" id="skills">
+<main
+id="container"
+class="container">
 
-<h2>Técnicas Ninja</h2>
+<!-- Os cards serão inseridos pelo JavaScript -->
 
-<div class="skill-grid">
-
-<div class="skill">
-🔥
-<h3>Fogo</h3>
-</div>
-
-<div class="skill">
-💧
-<h3>Água</h3>
-</div>
-
-<div class="skill">
-🌪
-<h3>Vento</h3>
-</div>
-
-<div class="skill">
-⚡
-<h3>Raio</h3>
-</div>
-
-<div class="skill">
-🌱
-<h3>Terra</h3>
-</div>
-
-<div class="skill">
-🌀
-<h3>Energia</h3>
-</div>
-
-</div>
-
-</section>
-
-<section class="villages" id="villages">
-
-<h2>Vilas</h2>
-
-<div class="village-container">
-
-<div class="village">
-🍃
-<h3>Folha</h3>
-</div>
-
-<div class="village">
-🌫
-<h3>Névoa</h3>
-</div>
-
-<div class="village">
-⚡
-<h3>Nuvem</h3>
-</div>
-
-<div class="village">
-🏜
-<h3>Areia</h3>
-</div>
-
-<div class="village">
-🪨
-<h3>Pedra</h3>
-</div>
-
-</div>
-
-</section>
-
-<section class="contact" id="contact">
-
-<h2>Entre em contato</h2>
-
-<form>
-
-<input type="text" placeholder="Nome">
-
-<input type="email" placeholder="Email">
-
-<textarea placeholder="Mensagem"></textarea>
-
-<button>
-Enviar
-</button>
-
-</form>
-
-</section>
+</main>
 
 <footer>
 
-<p>
-
-© 2026 Ninja Legends
-
-</p>
-
-<button id="theme">
-🌙
-</button>
+    <p>
+        Projeto feito com HTML, CSS e JavaScript.
+    </p>
 
 </footer>
 

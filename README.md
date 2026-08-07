@@ -1,83 +1,140 @@
-# 🥷 Ninja Legends
+# 🍥 Naruto Project
 
-Um site responsivo inspirado no universo dos ninjas, desenvolvido com **HTML**, **CSS** e **JavaScript**.
+Um projeto desenvolvido com **HTML, CSS e JavaScript** inspirado no universo ninja de Naruto.
+
+> Este projeto foi criado para fins de estudo e prática de desenvolvimento front-end.
+
+---
 
 ## ✨ Funcionalidades
 
-* 🎨 Interface moderna
+* 🔍 Pesquisa de personagens
+* 🏯 Filtro por vila
 * 📱 Layout responsivo
-* 🌙 Modo claro/escuro
-* ⚡ Animações suaves
-* 📜 Rolagem suave entre seções
-* 📋 Formulário de contato
-* ⬆️ Botão "Voltar ao topo"
+* 🎨 Interface moderna
+* ⚡ Animações em CSS
+* 💻 JavaScript puro (sem frameworks)
 
-## 📂 Estrutura do projeto
+---
+
+## 📁 Estrutura do Projeto
 
 ```text
-Ninja-Legends/
+naruto-project/
 │
 ├── index.html
 ├── style.css
 ├── script.js
 ├── README.md
-│
-└── assets/
-    ├── images/
-    └── icons/
+├── assets/
+│   ├── background.jpg
+│   ├── naruto.jpg
+│   ├── sasuke.jpg
+│   ├── sakura.jpg
+│   └── ...
 ```
+
+---
 
 ## 🚀 Como executar
 
-1. Faça o download ou clone o repositório:
+1. Clone o repositório:
 
 ```bash
-git clone https://github.com/SEU-USUARIO/Ninja-Legends.git
+git clone https://github.com/SEU-USUARIO/naruto-project.git
 ```
 
 2. Entre na pasta:
 
 ```bash
-cd Ninja-Legends
+cd naruto-project
 ```
 
-3. Abra o arquivo `index.html` em qualquer navegador moderno.
+3. Abra o arquivo **index.html** no navegador.
 
-## 🛠️ Tecnologias
+---
+
+## 🛠 Tecnologias
 
 * HTML5
 * CSS3
 * JavaScript (ES6)
 
-## 📱 Compatibilidade
+---
 
-* Google Chrome
-* Microsoft Edge
-* Mozilla Firefox
-* Opera
-* Safari
+## 📷 Preview
 
-## 📸 Personalização
+Adicione uma imagem do projeto na pasta do repositório e atualize este trecho:
 
-Você pode alterar:
-
-* Cores
-* Fontes
-* Ícones
-* Imagens
-* Textos
-* Animações
-
-para adaptar o projeto ao seu estilo.
-
-## 📄 Licença
-
-Este projeto é disponibilizado para fins de estudo e aprendizado.
-
-## 👨‍💻 Autor
-
-Desenvolvido como um projeto de front-end para praticar HTML, CSS e JavaScript.
+```markdown
+![Preview](assets/preview.png)
+```
 
 ---
 
-⭐ Se este projeto foi útil para você, considere deixar uma estrela no repositório.
+## 🎯 Objetivo
+
+Este projeto foi desenvolvido para praticar:
+
+* Estruturação de páginas com HTML
+* Estilização com CSS
+* Manipulação do DOM
+* Eventos em JavaScript
+* Organização de projetos para GitHub
+
+---
+
+## 📌 Melhorias Futuras
+
+* Sistema de favoritos
+* Página individual para cada personagem
+* Modo claro/escuro
+* Consumo de API
+* Sons e efeitos
+* Ranking de poder
+* Barra de chakra animada
+* Mais personagens
+
+---
+
+## 🤝 Contribuição
+
+Contribuições são bem-vindas.
+
+1. Faça um Fork.
+2. Crie uma Branch.
+
+```bash
+git checkout -b minha-feature
+```
+
+3. Faça o Commit.
+
+```bash
+git commit -m "Minha melhoria"
+```
+
+4. Envie para seu repositório.
+
+```bash
+git push origin minha-feature
+```
+
+5. Abra um Pull Request.
+
+---
+
+## 📄 Licença
+
+Este projeto é distribuído apenas para fins educacionais.
+
+Naruto e seus personagens pertencem aos seus respectivos detentores dos direitos autorais. Este projeto não é oficial nem afiliado aos proprietários da franquia.
+
+---
+
+# 👨‍💻 Autor
+
+Desenvolvido por **SEU NOME**.
+
+Se gostou do projeto, deixe uma ⭐ no repositório!
+
